@@ -1,0 +1,142 @@
+.about {
+  background-color: #0a0a0a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logoBg {
+  position: absolute;
+  height: 100px;
+  opacity: 2%;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
+
+.containerAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 140px;
+}
+
+.conteinerAbout1 {
+  width: 430px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.containerAbout h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.conteinerDescription {
+  width: 360px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.textGradient {
+  background: rgb(14, 81, 182);
+  background: linear-gradient(
+    141deg,
+    rgba(14, 81, 182, 1) 0%,
+    rgba(14, 81, 182, 1) 31%,
+    rgba(49, 111, 203, 1) 66%,
+    rgba(87, 151, 246, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.conteinarIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.resume {
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 900;
+  height: autopx;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsRed {
+  color: #ffffff;
+  text-decoration: none;
+  height: 30px;
+}
+.githubIcon,
+.linkedinIcon {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* //! ////////////////// hover logos ////////////////// */
+
+.resume:hover {
+  background-color: rgb(14, 81, 182);
+  transition: 100ms ease all;
+}
+.githubIcon:hover {
+  color: rgb(14, 81, 182);
+  transition: 100ms ease all;
+}
+
+.linkedinIcon:hover {
+  color: rgb(14, 81, 182);
+  transition: 100ms ease all;
+}
+
+.conteinerAbout2 {
+  height: 350px;
+}
+.conteinerAbout2 img {
+  height: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 2561px) {
+  /* Estilos para pantallas de 27" y más grandes */
+  /* Añade tus estilos aquí */
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  /* Estilos para pantallas de 19" a 27" */
+  /* Tus estilos actuales parecen estar optimizados para esta resolución */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  /* Estilos para pantallas de tabletas (768px a 1024px) */
+  /* Añade tus estilos aquí */
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para pantallas de móviles (menos de 768px) */
+  /* Añade tus estilos aquí */
+}

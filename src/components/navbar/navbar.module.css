@@ -1,0 +1,183 @@
+.navBar {
+  width: 100%;
+  padding: 0 70px 0 70px;
+  box-sizing: border-box;
+  height: 75px;
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.divLogo {
+  height: 40px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navBarUl {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  list-style: none;
+}
+
+.navBarUl li {
+  cursor: pointer;
+}
+
+.navBarUl li:hover {
+  color: rgb(151, 151, 151);
+  transition: 50ms ease;
+}
+
+.navBarUl a:hover {
+  color: rgb(151, 151, 151);
+  transition: 50ms ease;
+}
+
+.mode {
+  font-size: 17px;
+}
+
+/* Estilos para pantalla de 27" */
+@media screen and (max-width: 2700px) {
+  .navBar {
+    padding: 0 80px 0 80px;
+    height: 80px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 45px;
+  }
+
+  .navBarUl {
+    gap: 36px;
+  }
+
+  .mode {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para pantalla de 23" */
+@media screen and (max-width: 2300px) {
+  .navBar {
+    padding: 0 70px 0 70px;
+    height: 75px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 40px;
+  }
+
+  .navBarUl {
+    gap: 33px;
+  }
+
+  .mode {
+    font-size: 17px;
+  }
+}
+
+/* Estilos para pantalla de 19" */
+@media screen and (max-width: 1900px) {
+  .navBar {
+    padding: 0 60px 0 60px;
+    height: 70px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 35px;
+  }
+
+  .navBarUl {
+    gap: 30px;
+  }
+
+  .mode {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantalla de 15" */
+@media screen and (max-width: 1500px) {
+  .navBar {
+    padding: 0 50px 0 50px;
+    height: 65px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 30px;
+  }
+
+  .navBarUl {
+    gap: 27px;
+  }
+
+  .mode {
+    font-size: 15px;
+  }
+}
+
+/* Estilos para pantalla de 13" */
+@media screen and (max-width: 1300px) {
+  .navBar {
+    padding: 0 40px 0 40px;
+    height: 60px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 25px;
+  }
+
+  .navBarUl {
+    gap: 24px;
+  }
+
+  .mode {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .navBar {
+    padding: 0 20px 0 20px;
+    height: 55px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 20px;
+  }
+
+  .navBarUl {
+    gap: 20px;
+  }
+
+  .mode {
+    font-size: 13px;
+  }
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
