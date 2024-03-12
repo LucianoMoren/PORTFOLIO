@@ -28,7 +28,10 @@ body {
   margin: 0;
   height: 100vh;
   box-sizing: border-box;
-  background-color: #0a0a0a;
+
+  background-image: url("./assets/bg.svg");
+  background-size: cover; /* La imagen cubrirá todo el cuerpo */
+  background-attachment: fixed;
 }
 
 /**
