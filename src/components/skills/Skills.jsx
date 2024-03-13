@@ -1,14 +1,16 @@
 import React from "react";
 import style from "./skills.module.css";
 import {
+  SiAdobeillustrator,
   SiExpress,
   SiPostgresql,
   SiRedux,
   SiSequelize,
   SiTailwindcss,
+  SiVisualstudiocode,
 } from "react-icons/si";
 
-import { FaCss3, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+import { FaCss3, FaFigma, FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 import logo from "../../assets/logo.png";
@@ -53,6 +55,16 @@ function Skills() {
             </div>
             <div className={style.skill}>
               <SiPostgresql className={style.iconoSkill} />
+            </div>
+            <div className={style.skill}>
+              <SiVisualstudiocode className={style.iconoSkill} />
+            </div>
+            <div className={style.skill}>
+              <SiAdobeillustrator className={style.iconoSkill} />
+            </div>
+
+            <div className={style.skill}>
+              <FaFigma className={style.iconoSkill} />
             </div>
           </div>
 

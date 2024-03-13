@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./about.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 import fondoPerfil from "../../assets/fondo-perfil.png";
 import logo from "../../assets/logo.png";
+
+import { Fade } from "react-awesome-reveal";
+
 function About() {
   return (
     <section className={style.about} id="about">
@@ -22,15 +24,17 @@ function About() {
           </div>
 
           <div className={style.conteinerDescription}>
-            <p className={style.description}>
-              {" "}
-              A{" "}
-              <span className={style.textGradient}>
-                Programming technician
-              </span>{" "}
-              passionate about creating interactive applications and experiences
-              on the web.
-            </p>
+            <Fade>
+              <p className={style.description}>
+                {" "}
+                A{" "}
+                <span className={style.textGradient}>
+                  Programming technician
+                </span>{" "}
+                passionate about creating interactive applications and
+                experiences on the web.
+              </p>
+            </Fade>
           </div>
 
           <div className={style.conteinarIcons}>
@@ -39,7 +43,11 @@ function About() {
               <FaGithub className={style.githubIcon} />
             </a>
 
-            <a href="" className={style.iconsRed}>
+            <a
+              href="https://www.linkedin.com/in/lucianomoren/"
+              target="_blank"
+              className={style.iconsRed}
+            >
               <FaLinkedin className={style.linkedinIcon} />
             </a>
           </div>

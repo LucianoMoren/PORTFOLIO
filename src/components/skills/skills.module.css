@@ -4,7 +4,7 @@
   padding: 75px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -22,11 +22,11 @@
   display: flex;
   flex-direction: row;
   gap: 25px;
-  height: 180px;
+  height: auto;
   width: 500px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .skill {
@@ -38,8 +38,7 @@
   border-radius: 10px;
   width: auto;
   height: auto;
-  font-size: 80px;
-  transition: 2s ease all;
+  font-size: 70px;
 }
 
 .father {
@@ -53,7 +52,7 @@
 .subtitle {
   display: flex;
   justify-content: start;
-
+  margin-bottom: 50px;
   width: 100%;
   border-bottom: 4px white solid;
 }
@@ -74,12 +73,18 @@
 .iconoSkill {
   color: white;
   cursor: pointer;
-  transition: 150ms ease all;
+  transition: transform 0.3s ease;
 }
 
 .iconoSkill:hover {
-  transition: 150ms ease all;
   transform: scale(1.2);
   color: rgb(14, 81, 182);
   filter: drop-shadow(0px 0px 2px #003688);
+}
+.imgSkills {
+  width: 300px;
+}
+
+.imgSkills img {
+  width: 290px;
 }

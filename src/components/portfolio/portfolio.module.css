@@ -1,3 +1,30 @@
 .portfolio {
   height: 100vh;
+  box-sizing: border-box;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.logoBg {
+  position: absolute;
+  height: 100px;
+  opacity: 2%;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
+.subtitle {
+  display: flex;
+  justify-content: start;
+  width: 80%;
+  border-bottom: 4px white solid;
+  margin-bottom: 50px;
+}
+.subtitle h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
 }
