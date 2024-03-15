@@ -23,10 +23,73 @@
   flex-direction: row;
   gap: 25px;
   height: auto;
-  width: 500px;
+  width: 100%;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(27, 27, 27);
+  padding: 20px;
+  border-radius: 15px;
+  height: 340px;
+  position: relative;
+}
+
+.sectionContainer span {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  /* background: rgb(14, 81, 182);
+  background: linear-gradient(
+    141deg,
+    rgba(14, 81, 182, 1) 0%,
+    rgba(14, 81, 182, 1) 31%,
+    rgba(49, 111, 203, 1) 66%,
+    rgba(87, 151, 246, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.frontEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 250px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.backEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 250px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.herramientas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 250px;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .skill {
@@ -34,11 +97,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 25px;
+  gap: 5px;
   border-radius: 10px;
   width: auto;
   height: auto;
-  font-size: 70px;
+  font-size: 45px;
+  transition: transform 150ms ease;
 }
 
 .father {
@@ -70,21 +134,54 @@
   align-items: center;
 }
 
-.iconoSkill {
-  color: white;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.iconoSkill:hover {
-  transform: scale(1.2);
-  color: rgb(14, 81, 182);
-  filter: drop-shadow(0px 0px 2px #003688);
-}
 .imgSkills {
   width: 300px;
 }
 
 .imgSkills img {
   width: 290px;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sectionContainer img {
+  height: 45px;
+}
+
+.js {
+  color: #f4e11e;
+}
+
+.tailwind {
+  color: #38bdf8;
+}
+.react {
+  color: #149eca;
+}
+.redux {
+  color: #764abc;
+}
+
+.node {
+  color: #026e00;
+}
+
+.git {
+  color: #f34f29;
+}
+
+.skill:hover {
+  transform: scale(1.2);
+}
+
+.tools {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #0e51b6;
+  font-size: 20px;
 }
