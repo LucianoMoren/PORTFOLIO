@@ -12,6 +12,7 @@ function Navbar() {
 
       <ul className={style.navBarUl}>
         <a href="#about">ABOUT</a>
+        <a href="#education">EDUCATION</a>
         <a href="#skills">SKILLS</a>
         <a href="#portfolio">PORTFOLIO</a>
         <a href="#contact">CONTACT</a>

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./portfolio.module.css";
 import logo from "../../assets/logo.png";
+import { RiArrowDownSLine } from "react-icons/ri";
 function Portfolio() {
   return (
     <section className={style.portfolio} id="portfolio">
@@ -15,6 +16,7 @@ function Portfolio() {
         <div className={style.proyect5}> </div>
         <div className={style.proyect6}> </div>
       </div>
+      <RiArrowDownSLine className={style.Arrow} />
       <img src={logo} alt="logo-bg" className={style.logoBg} />
     </section>
   );

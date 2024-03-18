@@ -19,6 +19,7 @@ import sequelizeLogo from "../../assets/tecnologias/sequelize.png";
 import postgreLogo from "../../assets/tecnologias/postgre.png";
 import ilustratorLogo from "../../assets/tecnologias/ilustrator.png";
 import visualLogo from "../../assets/tecnologias/visual.png";
+import { RiArrowDownSLine } from "react-icons/ri";
 function Skills() {
   return (
     <section className={style.skills} id="skills">
@@ -112,6 +113,7 @@ function Skills() {
           </div> */}
         </div>
       </div>
+      <RiArrowDownSLine className={style.Arrow} />
       <img src={logo} alt="logo-bg" className={style.logoBg}></img>
     </section>
   );

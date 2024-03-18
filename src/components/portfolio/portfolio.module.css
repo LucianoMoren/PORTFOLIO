@@ -28,3 +28,9 @@
   font-size: 48px;
   font-weight: 500;
 }
+.Arrow {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(240, 240, 240);
+  bottom: 0px;
+}

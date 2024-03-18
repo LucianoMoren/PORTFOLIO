@@ -1,0 +1,17 @@
+.education {
+  background-color: transparent;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logoBg {
+  position: absolute;
+  height: 100px;
+  opacity: 2%;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}

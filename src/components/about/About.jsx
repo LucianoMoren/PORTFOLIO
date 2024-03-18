@@ -3,8 +3,10 @@ import style from "./about.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import fondoPerfil from "../../assets/fondo-perfil.png";
 import logo from "../../assets/logo.png";
+import { LuDownload } from "react-icons/lu";
 
-import { Fade } from "react-awesome-reveal";
+import { RiArrowDownSLine } from "react-icons/ri";
+import cv from "../../download/cv-luciano-moren.pdf";
 
 function About() {
   return (
@@ -24,22 +26,23 @@ function About() {
           </div>
 
           <div className={style.conteinerDescription}>
-            <Fade>
-              <p className={style.description}>
-                {" "}
-                A{" "}
-                <span className={style.textGradient}>
-                  Programming technician
-                </span>{" "}
-                passionate about creating interactive applications and
-                experiences on the web.
-              </p>
-            </Fade>
+            <p className={style.description}>
+              {" "}
+              A{" "}
+              <span className={style.textGradient}>
+                Programming technician
+              </span>{" "}
+              passionate about creating interactive applications and experiences
+              on the web.
+            </p>
           </div>
 
-          <div className={style.conteinarIcons}>
-            <button className={style.resume}>CV</button>
-            <a href="" className={style.iconsRed}>
+          <div className={style.conteinerIcons}>
+            <a
+              href="https://github.com/LucianoMoren"
+              target="_blank"
+              className={style.iconsRed}
+            >
               <FaGithub className={style.githubIcon} />
             </a>
 
@@ -50,13 +53,20 @@ function About() {
             >
               <FaLinkedin className={style.linkedinIcon} />
             </a>
+            <a
+              href={cv}
+              download="cv-luciano-moren.pdf"
+              className={style.resume}
+            >
+              Download Resume <LuDownload className={style.iconDownload} />
+            </a>
           </div>
         </div>
         <div className={style.conteinerAbout2}>
           <img src={fondoPerfil} alt="fondo-perfil" />
         </div>
       </div>
-
+      <RiArrowDownSLine className={style.Arrow} />
       <img src={logo} alt="logo-bg" className={style.logoBg} />
     </section>
   );
