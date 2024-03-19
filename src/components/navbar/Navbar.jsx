@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./navbar.module.css";
-import { MdOutlineLightMode, MdLightMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
 
 function Navbar() {
@@ -11,11 +12,66 @@ function Navbar() {
       </div>
 
       <ul className={style.navBarUl}>
-        <a href="#about">ABOUT</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#portfolio">PORTFOLIO</a>
-        <a href="#contact">CONTACT</a>
+        <li>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            ABOUT
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="education"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            EDUCATION
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            SKILLS
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="portfolio"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            PORTFOLIO
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            CONTACT
+          </Link>
+        </li>
         <li>EN</li>
         <li>
           <MdOutlineLightMode className={style.mode} />

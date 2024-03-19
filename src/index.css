@@ -9,6 +9,7 @@
  */
 
 html {
+  scroll-behavior: smooth;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   height: 100vh;
@@ -17,6 +18,11 @@ html {
   box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 /* Sections
      ========================================================================== */
 
