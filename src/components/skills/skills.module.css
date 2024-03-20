@@ -8,21 +8,16 @@
   align-items: center;
   position: relative;
 }
-
+.linkArrow {
+  position: absolute;
+  bottom: 80px;
+}
 .Arrow {
   position: absolute;
   font-size: 40px;
   color: rgb(240, 240, 240);
-  bottom: 80px;
-}
-
-.logoBg {
-  position: absolute;
-  height: 100px;
-  opacity: 2%;
-  right: 0;
-  bottom: 0;
-  margin: 20px;
+  bottom: 10px;
+  cursor: pointer;
 }
 
 .containerSkills {
@@ -42,11 +37,11 @@
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  background-color: rgb(27, 27, 27);
   padding: 20px;
   border-radius: 15px;
   height: 340px;
   position: relative;
+  border: 2px solid #ffffff1f;
 }
 
 .sectionContainer span {
@@ -57,16 +52,6 @@
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 2px;
-  /* background: rgb(14, 81, 182);
-  background: linear-gradient(
-    141deg,
-    rgba(14, 81, 182, 1) 0%,
-    rgba(14, 81, 182, 1) 31%,
-    rgba(49, 111, 203, 1) 66%,
-    rgba(87, 151, 246, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .frontEnd {
@@ -125,13 +110,13 @@
   justify-content: start;
   margin-bottom: 50px;
   width: 100%;
-  border-bottom: 4px white solid;
+  border-bottom: 2px white solid;
 }
 
 .subtitle h2 {
+  font-weight: 400;
   margin: 0;
   font-size: 48px;
-  font-weight: 500;
 }
 
 .contenedor {

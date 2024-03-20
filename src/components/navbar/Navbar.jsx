@@ -21,7 +21,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            ABOUT
+            Sobre mí
           </Link>
         </li>
         <li>
@@ -33,7 +33,20 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            EDUCATION
+            Educación
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="portfolio"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            exact="true"
+          >
+            Proyectos
           </Link>
         </li>
         <li>
@@ -45,19 +58,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            SKILLS
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="portfolio"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            spy={true}
-            exact="true"
-          >
-            PORTFOLIO
+            Habilidades
           </Link>
         </li>
         <li>
@@ -69,10 +70,9 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            CONTACT
+            Contacto
           </Link>
         </li>
-        <li>EN</li>
         <li>
           <MdOutlineLightMode className={style.mode} />
         </li>

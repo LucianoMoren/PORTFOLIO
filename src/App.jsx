@@ -11,10 +11,9 @@ function App() {
       <Navbar />
       <About />
       <Education />
-      <Skills />
       <Portfolio />
+      <Skills />
       <Contact />
-      <Footer />
     </>
   );
 }

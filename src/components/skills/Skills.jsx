@@ -10,8 +10,6 @@ import {
 import { FaGitAlt, FaNodeJs, FaReact, FaServer, FaTools } from "react-icons/fa";
 import { MdOutlineComputer } from "react-icons/md";
 
-import logo from "../../assets/logo.png";
-import imageSkills from "../../assets/imageskills.png";
 import cssLogo from "../../assets/tecnologias/css.png";
 import figmaLogo from "../../assets/tecnologias/figma.png";
 import htmlLogo from "../../assets/tecnologias/html.png";
@@ -20,12 +18,13 @@ import postgreLogo from "../../assets/tecnologias/postgre.png";
 import ilustratorLogo from "../../assets/tecnologias/ilustrator.png";
 import visualLogo from "../../assets/tecnologias/visual.png";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 function Skills() {
   return (
     <section className={style.skills} id="skills">
       <div className={style.father}>
         <div className={style.subtitle}>
-          <h2>SKILLS</h2>
+          <h2>Skills</h2>
         </div>
 
         <div className={style.contenedor}>
@@ -107,14 +106,19 @@ function Skills() {
               <FaTools className={style.tools} />
             </div>
           </div>
-
-          {/* <div className={style.imgSkills}>
-            <img src={imageSkills} alt="imagen-skills" />
-          </div> */}
         </div>
       </div>
-      <RiArrowDownSLine className={style.Arrow} />
-      <img src={logo} alt="logo-bg" className={style.logoBg}></img>
+      <Link
+        to="contact"
+        smooth={true}
+        duration={500}
+        offset={-70}
+        spy={true}
+        exact="true"
+        className={style.linkArrow}
+      >
+        <RiArrowDownSLine className={style.Arrow} />
+      </Link>
     </section>
   );
 }

@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import Swal from "sweetalert2";
 import msj from "../../assets/pc.png";
-import logo from "../../assets/logo.png";
+import user from "../../assets/user.svg";
 function Contact() {
   const form = useRef();
 
@@ -40,7 +40,8 @@ function Contact() {
     <section className={style.contact} id="contact">
       <div className={style.father}>
         <div className={style.subtitle}>
-          <h2>CONTACT</h2>
+          <img src={user} alt="userIcon" className={style.iconGeneral} />
+          <h2>Contacto</h2>
         </div>
         <div className={style.contenedor}>
           <div className={style.contactme}>
@@ -72,20 +73,28 @@ function Contact() {
           </div>
           <div className={style.formContact}>
             <form ref={form} onSubmit={sendEmail} className={style.form}>
-              <input type="text" name="user_name" placeholder="Name" required />
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Nombre completo"
+                required
+              />
               <input
                 type="email"
                 name="user_email"
                 placeholder="Email"
                 required
               />
-              <textarea name="message" placeholder="Message" required />
-              <input type="submit" value="SEND" className={style.send} />
+              <textarea name="message" placeholder="Mensaje" required />
+              <input type="submit" value="ENVIAR" className={style.send} />
             </form>
           </div>
         </div>
       </div>
-      <img src={logo} alt="logo-bg" className={style.logoBg} />
+
+      <div className={style.bottom}>
+        <p>© 2024 Luciano Moren - Todos los derechos reservados</p>
+      </div>
     </section>
   );
 }

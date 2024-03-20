@@ -8,29 +8,26 @@
   align-items: center;
   position: relative;
 }
-.logoBg {
-  position: absolute;
-  height: 100px;
-  opacity: 2%;
-  right: 0;
-  bottom: 0;
-  margin: 20px;
-}
+
 .subtitle {
   display: flex;
   justify-content: start;
   width: 80%;
-  border-bottom: 4px white solid;
+  border-bottom: 2px white solid;
   margin-bottom: 50px;
 }
 .subtitle h2 {
+  font-weight: 400;
   margin: 0;
   font-size: 48px;
-  font-weight: 500;
+}
+.linkArrow {
+  position: absolute;
+  bottom: 130px;
 }
 .Arrow {
   position: absolute;
   font-size: 40px;
   color: rgb(240, 240, 240);
-  bottom: 80px;
+  cursor: pointer;
 }

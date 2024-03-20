@@ -2,9 +2,10 @@ import React from "react";
 import style from "./about.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import fondoPerfil from "../../assets/fondo-perfil.png";
-import logo from "../../assets/logo.png";
-import { LuDownload } from "react-icons/lu";
+import { Link } from "react-scroll";
 
+import { LuDownload } from "react-icons/lu";
+import { RxDoubleArrowDown } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import cv from "../../download/cv-luciano-moren.pdf";
 
@@ -14,30 +15,31 @@ function About() {
       <div className={style.containerAbout}>
         <div className={style.conteinerAbout1}>
           <div className={style.conteinerTitle}>
-            <p className={style.title}>
-              <span className={style.textGradient}>Hello</span>, It's Me
-            </p>
-
-            <h1>Luciano Moren</h1>
-            <p className={style.title}>
-              I'm{" "}
-              <span className={style.textGradient}>FRONT END DEVELOPER</span>
-            </p>
-          </div>
-
-          <div className={style.conteinerDescription}>
-            <p className={style.description}>
-              {" "}
-              A{" "}
-              <span className={style.textGradient}>
-                Programming technician
-              </span>{" "}
-              passionate about creating interactive applications and experiences
-              on the web.
-            </p>
+            <div>
+              <p className={style.title}>Aloooo, soy</p>
+              <h1 className={style.textGradient}>Luciano Moren</h1>
+            </div>
+            <div className={style.conteinerDescription}>
+              <p className={style.description}>
+                {" "}
+                Un{" "}
+                <span className={style.tecnico}>
+                  Técnico de programación
+                </span>{" "}
+                de Entre Rios, Argentina 🇦🇷. Especializado en el desarrollo
+                Front end de aplicaciones unicas.
+              </p>
+            </div>
           </div>
 
           <div className={style.conteinerIcons}>
+            <a
+              href={cv}
+              download="cv-luciano-moren.pdf"
+              className={style.resume}
+            >
+              Descargar CV <LuDownload className={style.iconDownload} />
+            </a>
             <a
               href="https://github.com/LucianoMoren"
               target="_blank"
@@ -53,109 +55,38 @@ function About() {
             >
               <FaLinkedin className={style.linkedinIcon} />
             </a>
-            <a
-              href={cv}
-              download="cv-luciano-moren.pdf"
-              className={style.resume}
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              exact="true"
             >
-              Download Resume <LuDownload className={style.iconDownload} />
-            </a>
+              <div className={style.work}>
+                <span className={style.openToWork}>OPEN TO WORK</span>
+                <RxDoubleArrowDown className={style.arrowWork} />
+              </div>
+            </Link>
           </div>
         </div>
         <div className={style.conteinerAbout2}>
           <img src={fondoPerfil} alt="fondo-perfil" />
         </div>
       </div>
-      <RiArrowDownSLine className={style.Arrow} />
-      <img src={logo} alt="logo-bg" className={style.logoBg} />
+      <Link
+        to="education"
+        smooth={true}
+        duration={500}
+        offset={-70}
+        spy={true}
+        exact="true"
+        className={style.linkArrow}
+      >
+        <RiArrowDownSLine className={style.Arrow} />
+      </Link>
     </section>
   );
 }
 
 export default About;
-// import React from "react";
-// import style from "./about.module.css";
-// import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import fondoPerfil from "../../assets/fondo-perfil.png";
-// import logo from "../../assets/logo.png";
-// import { LuDownload } from "react-icons/lu";
-// import { Link } from "react-scroll";
-// import { RiArrowDownSLine } from "react-icons/ri";
-// import cv from "../../download/cv-luciano-moren.pdf";
-
-// function About() {
-//   return (
-//     <section className={style.about} id="about">
-//       <div className={style.containerAbout}>
-//         <div className={style.conteinerAbout1}>
-//           <div className={style.conteinerTitle}>
-//             <p className={style.title}>
-//               <span className={style.textGradient}>Hello</span>, It's Me
-//             </p>
-
-//             <h1>Luciano Moren</h1>
-//             <p className={style.title}>
-//               I'm{" "}
-//               <span className={style.textGradient}>FRONT END DEVELOPER</span>
-//             </p>
-//           </div>
-
-//           <div className={style.conteinerDescription}>
-//             <p className={style.description}>
-//               {" "}
-//               A{" "}
-//               <span className={style.textGradient}>
-//                 Programming technician
-//               </span>{" "}
-//               passionate about creating interactive applications and experiences
-//               on the web.
-//             </p>
-//           </div>
-
-//           <div className={style.conteinerIcons}>
-//             <a
-//               href="https://github.com/LucianoMoren"
-//               target="_blank"
-//               className={style.iconsRed}
-//             >
-//               <FaGithub className={style.githubIcon} />
-//             </a>
-
-//             <a
-//               href="https://www.linkedin.com/in/lucianomoren/"
-//               target="_blank"
-//               className={style.iconsRed}
-//             >
-//               <FaLinkedin className={style.linkedinIcon} />
-//             </a>
-//             <a
-//               href={cv}
-//               download="cv-luciano-moren.pdf"
-//               className={style.resume}
-//             >
-//               Download Resume <LuDownload className={style.iconDownload} />
-//             </a>
-
-//             <p>Open to work</p>
-//           </div>
-//         </div>
-//         <div className={style.conteinerAbout2}>
-//           <img src={fondoPerfil} alt="fondo-perfil" />
-//         </div>
-//       </div>
-//       <Link
-//         to="education"
-//         smooth={true}
-//         duration={500}
-//         offset={-70}
-//         spy={true}
-//         exact="true"
-//       >
-//         <RiArrowDownSLine className={style.Arrow} />
-//       </Link>
-//       <img src={logo} alt="logo-bg" className={style.logoBg} />
-//     </section>
-//   );
-// }
-
-// export default About;

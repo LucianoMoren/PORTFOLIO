@@ -8,15 +8,6 @@
   padding: 0 75px 0;
 }
 
-.logoBg {
-  position: absolute;
-  height: 100px;
-  opacity: 2%;
-  right: 0;
-  bottom: 0;
-  margin: 20px;
-}
-
 .containerAbout {
   display: flex;
   flex-direction: row;
@@ -26,7 +17,7 @@
 }
 
 .conteinerAbout1 {
-  width: 430px;
+  width: 435px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -34,15 +25,57 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
 }
 
 .containerAbout h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.work {
+  position: relative;
+  transition: ease 500ms transform;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.openToWork {
+  color: rgb(13, 59, 5);
+  background-color: rgb(97, 196, 97);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  width: auto;
+  transition: ease 200ms transform;
+  z-index: 2; /* Ajustado a 2 para que aparezca sobre arrowWork */
+}
+
+.arrowWork {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+  transition: ease 200ms transform;
+  color: rgb(97, 196, 97);
+  z-index: 3; /* Ajustado a 3 para que aparezca por detrás de openToWork */
+}
+
+.work:hover .openToWork {
+  transform: translateY(-8px);
+}
+
+.work:hover .arrowWork {
+  opacity: 1;
+  transform: translateY(8px);
 }
 
 .conteinerDescription {
@@ -51,26 +84,26 @@
 
 .description {
   font-size: 18px;
-  font-weight: lighter;
 }
 
 .textGradient {
-  background: rgb(14, 81, 182);
+  background: rgb(18, 60, 193);
   background: linear-gradient(
-    141deg,
-    rgba(14, 81, 182, 1) 0%,
-    rgba(14, 81, 182, 1) 31%,
-    rgba(49, 111, 203, 1) 66%,
-    rgba(87, 151, 246, 1) 100%
+    84deg,
+    rgba(18, 60, 193, 1) 0%,
+    rgba(38, 111, 249, 1) 56%,
+    rgba(95, 162, 247, 1) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
 }
 
+.tecnico {
+  color: rgb(252, 252, 144);
+}
 .conteinerIcons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -96,7 +129,7 @@
 .iconDownload {
   margin-left: 5px;
   transition: transform 150ms ease;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 .resume:hover .iconDownload {
   transform: scale(1.2) translateY(-7px);
@@ -107,14 +140,18 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 25px;
-  transition: 100ms ease color;
+  transition: 100ms ease color, transform 150ms ease;
 }
-
+.linkArrow {
+  position: absolute;
+  bottom: 10px;
+}
 .Arrow {
   position: absolute;
   font-size: 40px;
   color: rgb(240, 240, 240);
   bottom: 10px;
+  cursor: pointer;
 }
 
 /* //! ////////////////// hover logos ////////////////// */
@@ -123,25 +160,27 @@
   color: rgb(14, 81, 182);
 }
 
-.githubIcon:hover {
-  color: rgb(14, 81, 182);
+.iconsRed {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.linkedinIcon:hover {
+.iconsRed:hover .githubIcon,
+.iconsRed:hover .linkedinIcon {
+  transform: translateY(-7px);
   color: rgb(14, 81, 182);
 }
 
 .conteinerAbout2 {
   height: 350px;
+  position: relative;
 }
 .conteinerAbout2 img {
   height: 100%;
-  transition: 500ms ease transform;
 }
 
-.conteinerAbout2 img:hover {
-  transform: scale(1.05);
-}
 /* Media Queries */
 
 @media screen and (min-width: 2561px) {
