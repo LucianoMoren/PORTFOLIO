@@ -16,7 +16,7 @@ function About() {
       <div className={style.containerAbout}>
         <div className={style.conteinerAbout1}>
           <div className={style.conteinerTitle}>
-            <div>
+            <div className={style.titleLiteral}>
               <p className={style.title}>Aloooo, soy</p>
               <h1 className={style.textGradient}>Luciano Moren</h1>
             </div>
