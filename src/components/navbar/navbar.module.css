@@ -38,12 +38,12 @@
 }
 
 .navBarUl li:hover {
-  color: rgb(151, 151, 151);
+  color: #facc15;
   transition: 50ms ease;
 }
 
 .navBarUl a:hover {
-  color: rgb(151, 151, 151);
+  color: #facc15;
   transition: 50ms ease;
 }
 

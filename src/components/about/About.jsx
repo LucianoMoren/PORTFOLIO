@@ -1,13 +1,14 @@
 import React from "react";
 import style from "./about.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import fondoPerfil from "../../assets/fondo-perfil.png";
+import fondoPerfil from "../../assets/about.png";
 import { Link } from "react-scroll";
 
 import { LuDownload } from "react-icons/lu";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import cv from "../../download/cv-luciano-moren.pdf";
+import argentina from "../../assets/argentina.svg";
 
 function About() {
   return (
@@ -26,8 +27,14 @@ function About() {
                 <span className={style.tecnico}>
                   Técnico de programación
                 </span>{" "}
-                de Entre Rios, Argentina 🇦🇷. Especializado en el desarrollo
-                Front end de aplicaciones unicas.
+                de Entre Rios, Argentina{" "}
+                <img
+                  src={argentina}
+                  alt="argentinaFlag"
+                  className={style.flag}
+                />
+                . Especializado en el desarrollo Front end de aplicaciones
+                unicas.
               </p>
             </div>
           </div>

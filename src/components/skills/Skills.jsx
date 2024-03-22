@@ -19,12 +19,14 @@ import ilustratorLogo from "../../assets/tecnologias/ilustrator.png";
 import visualLogo from "../../assets/tecnologias/visual.png";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-scroll";
+import skills from "../../assets/device-desktop.svg";
 function Skills() {
   return (
     <section className={style.skills} id="skills">
       <div className={style.father}>
         <div className={style.subtitle}>
-          <h2>Skills</h2>
+          <img src={skills} alt="skillsIcon" className={style.iconGeneral} />
+          <h2>Habilidades</h2>
         </div>
 
         <div className={style.contenedor}>

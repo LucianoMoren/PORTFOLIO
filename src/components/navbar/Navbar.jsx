@@ -49,7 +49,7 @@ function Navbar() {
             Proyectos
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="skills"
             smooth={true}
@@ -60,13 +60,13 @@ function Navbar() {
           >
             Habilidades
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={0}
             spy={true}
             exact="true"
           >

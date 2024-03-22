@@ -110,13 +110,17 @@
   justify-content: start;
   margin-bottom: 50px;
   width: 100%;
-  border-bottom: 2px white solid;
+  gap: 10px;
 }
 
 .subtitle h2 {
   font-weight: 400;
   margin: 0;
-  font-size: 48px;
+  font-size: 40px;
+}
+
+.iconGeneral {
+  width: 40px;
 }
 
 .contenedor {

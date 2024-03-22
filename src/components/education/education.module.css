@@ -10,13 +10,13 @@
 
 .father {
   width: 80%;
+  position: relative;
 }
 
 .subtitle {
   display: flex;
   justify-content: start;
   width: 100%;
-
   margin-bottom: 50px;
   gap: 10px;
 }
@@ -30,9 +30,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
   width: 100%;
   gap: 70px;
+  padding-left: 20px;
 }
 
 .study {
@@ -52,7 +52,6 @@
   color: rgb(240, 240, 240);
   cursor: pointer;
 }
-/* education.module.css */
 
 .contenedor {
   display: flex;
@@ -61,18 +60,19 @@
 
 .study {
   display: flex;
-
-  margin-bottom: 20px; /* Espacio entre cada elemento de estudio */
+  margin-bottom: 20px;
 }
 
 .study h3 {
   margin: 0;
   position: relative;
+  font-size: 18px;
   color: #facc15;
 }
 
 .study h4 {
   margin: 0;
+  font-size: 16px;
 }
 
 .study p {
@@ -83,25 +83,29 @@
   font-size: 14px;
   color: #717171;
 }
+
 .study h3::before {
-  content: ""; /* Crea el punto */
+  content: "";
   position: absolute;
-  left: -20px; /* Posición del punto a la izquierda del título */
-  top: 50%; /* Centra verticalmente el punto */
+  left: -20px;
+  top: 50%;
   transform: translateY(-50%);
-  width: 8px; /* Diámetro del punto */
-  height: 8px; /* Diámetro del punto */
-  background-color: #facc15; /* Color del punto */
-  border-radius: 50%; /* Hace que el punto sea redondo */
+  width: 10px;
+  height: 10px;
+  background-color: #facc15;
+  -webkit-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+  -moz-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+  box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+  border-radius: 50%;
   z-index: 1;
 }
 
 .study:not(:last-child) h3::after {
   content: "";
   position: absolute;
-  left: -17px;
+  left: -16px;
   top: -20px;
-  height: 300px;
+  height: 350px;
   width: 2px;
   background-color: rgba(255, 255, 255, 0.137);
 }
@@ -136,7 +140,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  width: 100px;
+  width: 110px;
   transition: ease 200ms transform;
 }
 
@@ -175,4 +179,12 @@
 .iconGeneral {
   color: white;
   width: 40px;
+}
+
+.studyBoy {
+  position: absolute;
+  position: absolute;
+  bottom: -130px;
+  right: 0;
+  height: 150px;
 }

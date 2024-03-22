@@ -3,7 +3,7 @@ import style from "./education.module.css";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-scroll";
 import school from "../../assets/school.svg";
-
+import study from "../../assets/study.png";
 import { RxDoubleArrowRight } from "react-icons/rx";
 function Education() {
   return (
@@ -36,7 +36,7 @@ function Education() {
                 </span>
               </p>
               <div className={style.leanMore}>
-                <span className={style.more}>Learn more</span>
+                <span className={style.more}>Saber Más...</span>
                 <RxDoubleArrowRight className={style.arrowdown} />
               </div>
             </div>
@@ -56,18 +56,22 @@ function Education() {
                   HTML5, CSS, JavaScript, React, Redux, Tailwind.css, Node.js,
                   Express, Sequelize y PostgreSQL
                 </span>
-                . Durante este período, he llevado a cabo proyectos tanto de
-                manera individual como en equipo.
+                . Durante este período, he llevado a cabo{" "}
+                <span className={style.descriptionSpan}>
+                  proyectos tanto de manera individual como en equipo.
+                </span>
               </p>
               <div className={style.leanMore}>
-                <span className={style.more}>Learn more</span>
+                <span className={style.more}>Saber Más...</span>
                 <RxDoubleArrowRight className={style.arrowdown} />
               </div>
             </div>
           </div>
         </div>
+        <img src={study} alt="studyboy" className={style.studyBoy} />
       </div>
-      <Link
+
+      {/* <Link
         to="portfolio"
         smooth={true}
         duration={500}
@@ -77,7 +81,7 @@ function Education() {
         className={style.linkArrow}
       >
         <RiArrowDownSLine className={style.Arrow} />
-      </Link>
+      </Link> */}
     </section>
   );
 }
