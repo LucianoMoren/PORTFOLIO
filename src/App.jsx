@@ -8,12 +8,12 @@ import Education from "./components/education/Education";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
-      {/* <Education />
-      <Portfolio /> */}
+      <Education />
+      <Portfolio />
       {/* <Skills /> */}
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }

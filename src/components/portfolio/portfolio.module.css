@@ -1,7 +1,7 @@
 .portfolio {
   height: auto;
   box-sizing: border-box;
-  padding: 0 75px 75px;
+  padding: 0 75px 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -189,4 +189,29 @@
   justify-content: start;
   flex-direction: row;
   gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding: 0px 30px 75px;
+  }
+
+  .father {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .proyect {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imgProyect {
+    width: 100%;
+  }
+
+  .descriptionProyect {
+    width: 100%;
+  }
 }

@@ -213,8 +213,9 @@
 
   .conteinerAbout1 {
     width: 100%;
-    height: 100%;
+    height: 50%;
     align-items: center;
+    justify-content: center;
   }
 
   .titleLiteral {
@@ -238,6 +239,7 @@
     font-size: 17px;
     padding: 0;
     width: 100%;
+    margin: 0;
   }
 
   .conteinerIcons {
@@ -249,20 +251,20 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   .conteinerAbout2 {
-    position: absolute;
-    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50%;
   }
   .conteinerAbout2 img {
-    width: 70%;
-    height: auto;
-    margin-top: 40%;
+    height: 100%;
+    width: auto;
   }
   .linkArrow {
     display: none;

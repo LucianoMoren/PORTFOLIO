@@ -188,3 +188,42 @@
   right: 0;
   height: 150px;
 }
+@media screen and (max-width: 767px) {
+  .education {
+    padding: 0 30px 0;
+  }
+
+  .father {
+    width: 100%;
+  }
+
+  .contenedor {
+    padding: 0;
+    align-items: end;
+  }
+
+  .study {
+    flex-direction: column;
+    width: 95%;
+    justify-content: end;
+  }
+  .containerTitle {
+    width: 100%;
+  }
+
+  .study:not(:last-child) h3::after {
+    left: -15px;
+    height: 680px;
+  }
+  .study h3::before {
+    left: -19px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .studyBoy {
+    display: none;
+  }
+}
