@@ -50,7 +50,7 @@ function Education() {
             </div>
             <div className={style.description}>
               <p>
-                Más de 700 horas de formación teórica y práctica dedicadas al
+                Más de 800 horas de formación teórica y práctica dedicadas al
                 aprendizaje de tecnologías tales como{" "}
                 <span className={style.descriptionSpan}>
                   HTML5, CSS, JavaScript, React, Redux, Tailwind.css, Node.js,
